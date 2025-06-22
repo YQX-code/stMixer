@@ -24,14 +24,13 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
 # ========== 参数配置 ==========
-embed1_path  = '/home/yangqx/mount2T_dev_sdh/cluster_plots_spleen1_single_pro_broken/data_epoch_10/Z_data_epoch_10_epoch_1.h5ad'
-embed2_path  = '/home/yangqx/mount2T_dev_sdh/cluster_plots_spleen2/data_epoch_27/Z_data_epoch_27_epoch_48.h5ad'
-pro1_path    = '/home/yangqx/SC/data/spleen/spleen1_protein_with_spatial.h5ad'
-pro2_path    = '/home/yangqx/SC/data/spleen/spleen2_protein_with_spatial.h5ad'
-# labels1_path = '/home/yangqx/SC/test/test_print_fig/stMixer_spleen1_spleen1_single_pro_broken_10,1.npy'
-labels1_path = '/home/yangqx/SC/test/test_print_fig/stMixer_spleen1_spleen1_single_pro_broken_10,1_km6.npy'
-labels2_path = '/home/yangqx/SC/test/test_print_fig/stMixer_spleen2_27,48.npy'
-out_dir      = '/home/yangqx/mount2T_dev_sdh/simple_spleen_mapping_spleen1_single_mmd'
+embed1_path  = ''   #slide1的嵌入保存h5ad路径
+embed2_path  = ''   #slide2的嵌入保存h5ad路径
+pro1_path    = '/home/yangqx/SC/data/spleen/spleen1_protein_with_spatial.h5ad'   #slide1的桥接模态保存h5ad路径
+pro2_path    = '/home/yangqx/SC/data/spleen/spleen2_protein_with_spatial.h5ad'   #slide2的桥接模态保存h5ad路径
+labels1_path = ''  #slide1的聚类标签保存npy路径
+labels2_path = ''  #slide2的聚类标签保存npy路径
+out_dir      = ''  #输出保存路径
 os.makedirs(out_dir, exist_ok=True)
 
 # 超参数
