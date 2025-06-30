@@ -22,7 +22,6 @@ stMixer for scalable mosaic integration and label transfer in spatial histology 
 - matplotlib==3.6.3
 - matplotlib-inline==0.1.7
 - harmony-pytorch==0.1.8
-# Tutorial
 
 
 # Data
